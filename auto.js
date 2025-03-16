@@ -62,10 +62,9 @@
 
                 await sleep(100);
                 submit();
-                await sleep(1000);
+                await sleep(800);
 
                 if (isCorrect(num)) {
-                    console.log(`Đúng với text: "${option}"`);
                     return true;
                 }
             }
@@ -76,8 +75,6 @@
                 let combinations = getCombinations(choices, count);
 
                 for (let combo of combinations) {
-
-                    console.log(combo);
 
                     document.querySelectorAll(".wrapper-problem-response")[num].querySelectorAll("input[type='checkbox']").forEach(ch => {
                         if((ch.checked != null && ch.checked === true)) {
@@ -92,7 +89,7 @@
 
                     await sleep(100);
                     submit();
-                    await sleep(1000);
+                    await sleep(800);
 
                     if (isCorrect(num)) {
                         return;
@@ -106,7 +103,7 @@
                 selectChoice(choice);
                 await sleep(100);
                 submit();
-                await sleep(1000);
+                await sleep(800);
                 if (isCorrect(num)) return;
             }
         }
@@ -133,7 +130,7 @@
     }
 
     submit();
-    await sleep(1000);
+    await sleep(800);
 
     let questions = document.querySelectorAll(".wrapper-problem-response");
     for (let i = 0; i < questions.length; i++) {
