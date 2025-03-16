@@ -62,7 +62,7 @@
 
                 await sleep(100);
                 submit();
-                await sleep(800);
+                await sleep(1000);
 
                 if (isCorrect(num)) {
                     return true;
@@ -89,7 +89,7 @@
 
                     await sleep(100);
                     submit();
-                    await sleep(800);
+                    await sleep(1000);
 
                     if (isCorrect(num)) {
                         return;
@@ -103,7 +103,7 @@
                 selectChoice(choice);
                 await sleep(100);
                 submit();
-                await sleep(800);
+                await sleep(1000);
                 if (isCorrect(num)) return;
             }
         }
